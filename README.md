@@ -43,12 +43,12 @@ This project sets up an isolated cybersecurity testing lab on my own laptop usin
 ### Step 1. Install VirtualBox
 I installed the latest VirtualBox from the official website and confirmed the version.
 
-![VirtualBox version](1-virtualbox-version.png)
+![VirtualBox version](1-virtualbox-version.png.png)
 
 ### Step 2. Create the NAT Network
 In File, Tools, Network, NAT Networks, I created NatNetwork with the IPv4 prefix 10.0.0.0/24 and DHCP enabled. A NAT Network lets all lab virtual machines talk to each other and also reach the internet.
 
-![NAT Network settings](2-nat-network-settings.png)
+![NAT Network settings](2-nat-network-settings.png.png)
 
 ### Step 3. Configure the Kali Linux VM network
 I set Adapter 1 of the Kali VM to NAT Network and selected NatNetwork.
@@ -68,7 +68,7 @@ I shared the Downloads folder of the host with Full access and auto-mount enable
 ### Step 6. Set a static IP address in Kali Linux
 In Edit Connections, Wired connection 1, IPv4 Settings, I used Manual mode with address 10.0.0.2, netmask 24, gateway 10.0.0.1 and DNS 8.8.8.8.
 
-![Kali IP configuration](6-kali-ip-config.png)
+![Kali IP configuration](6-kali-ip-config.png.png)
 
 ### Step 7. Verify the network
 I confirmed the IP address and route, then tested internet access with ping to an IP address and to a domain name.
